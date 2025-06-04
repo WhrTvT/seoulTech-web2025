@@ -1,9 +1,45 @@
 *{box-sizing:border-box;}
-body{font-family:Arial,Helvetica,sans-serif;margin:0;text-align:center;}
-.screen{padding:2rem;}
+body{
+    font-family:'Segoe UI',Tahoma,sans-serif;
+    margin:0;
+    text-align:center;
+    background:linear-gradient(135deg,#f8e8e8,#e8f0ff);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#app{
+    background:#fff;
+    padding:2rem;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    width:100%;
+    max-width:400px;
+}
+
+.screen{padding:1rem;}
 .hidden{display:none;}
-button{padding:0.5rem 1rem;margin:0.5rem;font-size:1rem;}
+
+button{
+    padding:0.5rem 1rem;
+    margin:0.5rem;
+    font-size:1rem;
+    background:#4e89ff;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    transition:background .3s;
+}
+button:hover{background:#2e6bff;}
+
+#choices button{width:45%;}
 #animal{font-size:4rem;margin:1rem;}
+#progress{margin-top:1rem;color:#555;}
+.copy-msg{margin-top:1rem;color:#4e89ff;font-size:0.9rem;}
+
 @media(max-width:600px){
     body{font-size:14px;}
     #animal{font-size:3rem;}
